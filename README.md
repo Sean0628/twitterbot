@@ -1,24 +1,4 @@
-# README
+# Famous Quotes Bot(Twitter Bot)
+twitter_id: [`@famousq365`]("https://twitter.com/famousq365")
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- This app is for twitter bot, which tweets a famous quote every one hour.
