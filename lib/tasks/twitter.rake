@@ -1,6 +1,6 @@
 namespace :twitter do
   desc "Tweet a famous quotes every 30 mins"
-  task :tweet do
+  task tweet: :environment do
     define_client
     tweet  = Quote.where( 'id >= ?',
                                 rand(Quote.first.id..Quote.last.id) ).first
