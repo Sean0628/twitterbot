@@ -15,8 +15,8 @@ class Scraping
           author = quote.at(".quoteText a").inner_text
         end
         save_quote(body, author)
-        num += 1
       end
+      num += 1
     end
   end
 
