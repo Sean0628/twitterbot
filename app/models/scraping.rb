@@ -21,6 +21,8 @@ class Scraping
   end
 
   def self.create_quote(body, author)
-    Quote.create!(body: body, author: author) unless body.nil? && author.nil?
+    unless body.blank? && author.blank?
+      Quote.create!(body: body, author: author)
+    end
   end
 end
