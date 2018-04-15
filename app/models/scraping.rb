@@ -20,6 +20,6 @@ class Scraping
   end
 
   def self.save_quote(body, author)
-    Quote.save(body: body, author: author)
+    Quote.create!(body: body, author: author)
   end
 end
