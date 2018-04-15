@@ -14,13 +14,13 @@ class Scraping
         if quote.at(".quoteText a")
           author = quote.at(".quoteText a").inner_text
         end
-        save_quote(body, author)
+        create_quote(body, author)
       end
       num += 1
     end
   end
 
-  def self.save_quote(body, author)
-    Quote.create!(body: body, author: author)
+  def self.create_quote(body, author)
+    Quote.create!(body: body, author: author) unless body.nil? && author.nil?
   end
 end
